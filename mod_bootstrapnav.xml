@@ -11,7 +11,7 @@
     <license>GNU General Public License version 2 or later</license>
     <authorEmail>brad@joomdigi.com</authorEmail>
     <authorUrl>www.joomdigi.com</authorUrl>
-    <version>1.3</version>
+    <version>1.4</version>
     <description>Joomla bootstrap navbar</description>
 	<files>
 		<filename module="mod_bootstrapnav">mod_bootstrapnav.php</filename>

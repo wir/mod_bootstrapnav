@@ -1,6 +1,6 @@
 <?php
 /**
- * @version     1.3
+ * @version     1.2
  * @package     mod_bootstrapnav
  * @copyright   Copyright (C) 2014. All rights reserved.
  * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
@@ -88,10 +88,10 @@ defined('_JEXEC') or die;
                             			 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $item->title; ?> <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                    	<?php foreach ($list as $i => &$item) : ?>
-                                    		<?php if($item->level > 1) : ?>
-                                        		<li><a href="<?php echo $item->flink; ?>"><?php echo $item->title; ?></a></li>
-                                        	<?php endif; ?>
+                                    	<?php foreach ($list as $i => &$subitem) : ?>                                 	
+                                    			<?php if($subitem->parent_id == $item->id) : ?>
+                                        			<li><a href="<?php echo $subitem->flink; ?>"><?php echo $subitem->title; ?></a></li>
+                                        		<?php endif; ?>       
                                     	<?php endforeach; ?>
                                     </ul>
                                 </li>
